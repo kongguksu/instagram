@@ -1,10 +1,285 @@
-h2 {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.highlight {
-  border: solid;
+
+html {
+  font-size: 62.5%;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #fafafa;
+}
+
+/****************************************/
+/***** GENERAL REUSABLE *****/
+/****************************************/
+
+.circle-pic {
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/****************************************/
+/***** NAV / TOP *****/
+/****************************************/
+
+#top {
+  display: flex;
+  height: 8.6rem;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding: 0 2.4rem;
+}
+
+.logo-img {
+  width: 16rem;
+  object-fit: contain;
+
+  padding: 2px;
+  margin: 2.4rem 3.2rem 1.2rem 0;
+}
+
+#top input {
+  width: 35%;
+  height: 65%;
+  background-color: #eee;
+  border: 1px solid #fff;
+  border-radius: 9px;
+
+  margin-right: 3.2rem;
+
+  text-align: left;
+  font-size: 2.6rem;
+  font-weight: 100;
+  color: #999;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav-icons a:link,
+.nav-icons a:visited {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 3rem;
+}
+
+.nav-icon {
+  font-size: 4rem;
+  color: #333;
+}
+
+.nav-profile-pic {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #333;
+  border-radius: 50%;
+
+  padding: 1px;
+}
+
+/****************************************/
+/***** PROFILE *****/
+/****************************************/
+
 #profile {
-  border: solid;
-  border-color: blue;
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  margin-bottom: 2.4rem;
+}
+
+#profile-pic {
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+
+  margin: 1.6rem auto 2.4rem auto;
+}
+
+#profile-info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  margin: 0 2.4rem 0 2.4rem;
+}
+
+#id {
+  display: flex;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #262626;
+  padding-top: 1.8rem;
+}
+
+.verified-symbol {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.8rem;
+  margin-right: 0.6rem;
+}
+
+.cog-btn {
+  width: 4rem;
+  height: 4rem;
+  stroke: #333;
+}
+
+.profile-btn {
+  height: 55%;
+  width: 40%;
+
+  color: #262626;
+  font-size: 2.1rem;
+  font-weight: 700;
+  background-color: #fafafa;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+/****************************************/
+/***** PROFILE DESCRIPTION *****/
+/****************************************/
+
+.profile-description {
+  margin-left: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.profile-name {
+  font-family: "Inter", sans-serif;
+  font-size: 2.1rem;
+  color: #262626;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.profile-job {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #8c8c8c;
+  margin-bottom: 0.8rem;
+}
+
+.profile-web a:link,
+.profile-web a:visited {
+  text-decoration: none;
+  margin-bottom: 3.2rem;
+  color: #00376b;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/****************************************/
+/***** HIGHLIGHT *****/
+/****************************************/
+
+#highlight-area {
+  display: grid;
+  grid-template-columns: 9rem 9rem 1fr;
+  column-gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.highlight-pic {
+  width: 9rem;
+  height: 9rem;
+  padding: 1px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.emoji {
+  text-align: center;
+}
+
+/****************************************/
+/***** STAT *****/
+/****************************************/
+
+#stat-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+
+  padding: 2.4rem 0;
+}
+
+.stat {
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+.stat-number {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 0.4rem;
+}
+
+.stat-caption {
+  font-family: "Inter", sans-serif;
+  color: #8c8c8c;
+}
+
+/****************************************/
+/***** THUMBNAIL *****/
+/****************************************/
+
+.pic-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pic-icon {
+  color: #8e8e8e;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.pic-icons a:link {
+  text-align: center;
+  margin: 1.4rem 0;
+  transition: all 0.25s;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.thumbnail {
+  width: 100%;
 }

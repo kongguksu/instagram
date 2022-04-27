@@ -4,82 +4,221 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>@sjsj_2050 · Instagram photos and videos</title>
   </head>
+
   <body>
-    <div>
+    <nav id="top">
       <img
         src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
         alt="Instagram logo"
+        class="logo-img"
       />
-      <input type="search" value="Search" />
-    </div>
+      <input type="search" value="&nbsp; &nbsp; Search" />
+      <div class="nav-icons">
+        <a href="#"
+          ><ion-icon class="nav-icon" name="home-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon
+            class="nav-icon"
+            name="chatbubble-ellipses-outline"
+          ></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon class="nav-icon" name="add-circle-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon class="nav-icon" name="compass-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon class="nav-icon" name="heart-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><img
+            class="nav-profile-pic"
+            src="image/profile.jpeg"
+            alt="Profile Photo"
+        /></a>
+      </div>
+    </nav>
 
-    <div id="profile">
-      <img src="image/profile.jpeg" alt="Profile image" width="50px" />\
-      <div>
-        <h2>sjsj_2050</h2>
-        <button>Edit Profile</button>
+    <main>
+      <div id="profile">
+        <div id="profile-pic">
+          <img
+            src="image/profile.jpeg"
+            alt="Profile image"
+            width="50px"
+            class="circle-pic"
+          />
+        </div>
+        <div id="profile-info">
+          <div id="id">
+            <span>sjsj_2050</span
+            ><img
+              class="verified-symbol"
+              src="image/verified.png"
+              alt="Verified Account Symbol"
+            /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="cog-btn"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+          <button class="profile-btn">Edit Profile</button>
+        </div>
+      </div>
+
+      <div class="profile-description">
+        <p class="profile-name">박수정 (Soojeong Park)</p>
+        <p class="profile-job">Web Developer</p>
+        <p class="profile-web">
+          <a href="https://kongguksu.github.io">kongguksu.github.io</a>
+        </p>
+      </div>
+
+      <div id="highlight-area">
+        <div class="highlight">
+          <div class="highlight-pic">
+            <img
+              src="image/hl_1.jpeg"
+              alt="Photo of NYC"
+              height="35px"
+              class="circle-pic"
+            />
+          </div>
+          <div class="emoji">😎</div>
+        </div>
+
+        <div class="highlight">
+          <div class="highlight-pic">
+            <img
+              src="image/hl_2.jpeg"
+              alt="Photo of NYC"
+              height="35px"
+              class="circle-pic"
+            />
+          </div>
+          <div class="emoji">🌃</div>
+        </div>
+        <div></div>
+      </div>
+
+      <div id="stat-bar">
+        <div class="stat">
+          <p class="stat-number">100</p>
+          <p class="stat-caption">posts</p>
+        </div>
+        <div class="stat">
+          <p class="stat-number">1.3m</p>
+          <p class="stat-caption">followers</p>
+        </div>
+        <div class="stat">
+          <p class="stat-number">0</p>
+          <p class="stat-caption">following</p>
+        </div>
+      </div>
+
+      <div class="pic-icons">
+        <a href="#"
+          ><ion-icon class="pic-icon" name="grid-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon class="pic-icon" name="film-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon class="pic-icon" name="play-outline"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon class="pic-icon" name="person-outline"></ion-icon
+        ></a>
+      </div>
+    </main>
+
+    <div class="section-thumbnail">
+      <div class="thumbnail-grid">
+        <img
+          src="image/thumbnails/nyc_1.jpeg"
+          alt="Shake Shack burger"
+          class="thumbnail"
+        />
+        <img
+          src="image/thumbnails/nyc_2.jpeg"
+          alt="Grand Central Station"
+          class="thumbnail"
+        />
+        <img
+          src="image/thumbnails/nyc_3.jpeg"
+          alt="Central Park"
+          class="thumbnail"
+        />
+      </div>
+      <div class="thumbnail-grid">
+        <img
+          src="image/thumbnails/nyc_4.jpeg"
+          alt="Timesquare Station"
+          class="thumbnail"
+        />
+        <img
+          src="image/thumbnails/nyc_5.jpeg"
+          alt="Brooklyn Bridge"
+          class="thumbnail"
+        />
+        <img
+          src="image/thumbnails/nyc_6.jpeg"
+          alt="Broadway"
+          class="thumbnail"
+        />
+      </div>
+      <div class="thumbnail-grid">
+        <img
+          src="image/thumbnails/nyc_7.jpeg"
+          alt="NY Library"
+          class="thumbnail"
+        />
+        <img
+          src="image/thumbnails/nyc_8.jpeg"
+          alt="A man making NY style pizza"
+          class="thumbnail"
+        />
+        <img
+          src="image/thumbnails/nyc_9.jpeg"
+          alt="NY MOMA"
+          class="thumbnail"
+        />
       </div>
     </div>
 
-    <div>
-      <p>
-        <strong>Soojeong Park</strong><br />
-        Web Developer
-      </p>
-      <p><a href="https://kongguksu.github.io">kongguksu.github.io</a></p>
-    </div>
-
-    <div class="highlight">
-      <div><img src="image/hl_1.jpeg" alt="Photo of NYC" height="35px" /></div>
-      <div>😎</div>
-    </div>
-    <div class="highlight">
-      <div><img src="image/hl_2.jpeg" alt="Photo of NYC" height="35px" /></div>
-      <div>🌃</div>
-    </div>
-
-    <div>
-      <div>posts<br />40</div>
-      <div>followers<br />23</div>
-      <div>following<br />100</div>
-    </div>
-
-    <div>Icon</div>
-
-    <div>
-      <img
-        src="image/thumbnails/nyc_1.jpeg"
-        alt="Shake Shack burger"
-        width="32%"
-      />
-      <img
-        src="image/thumbnails/nyc_2.jpeg"
-        alt="Grand Central Station"
-        width="32%"
-      />
-      <img src="image/thumbnails/nyc_3.jpeg" alt="Central Park" width="32%" />
-      <img
-        src="image/thumbnails/nyc_4.jpeg"
-        alt="Timesquare Station"
-        width="32%"
-      />
-      <img
-        src="image/thumbnails/nyc_5.jpeg"
-        alt="Brooklyn Bridge"
-        width="32%"
-      />
-      <img src="image/thumbnails/nyc_6.jpeg" alt="Broadway" width="32%" />
-      <img src="image/thumbnails/nyc_7.jpeg" alt="NY Library" width="32%" />
-      <img
-        src="image/thumbnails/nyc_8.jpeg"
-        alt="A man making NY style pizza"
-        width="32%"
-      />
-      <img src="image/thumbnails/nyc_9.jpeg" alt="NY MOMA" width="32%" />
-      <img src="" alt="" />
-    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
