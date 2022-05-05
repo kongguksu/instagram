@@ -1,3 +1,11 @@
+/* 
+- FONT SIZES (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -40,57 +48,59 @@ main {
 
 #top {
   display: flex;
-  height: 8.6rem;
+  height: 6rem;
   align-items: center;
-  border-bottom: 2px solid #ddd;
-  padding: 0 2.4rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0 2rem;
 }
 
 .logo-img {
-  width: 16rem;
+  height: 2.9rem;
   object-fit: contain;
 
-  padding: 2px;
-  margin: 2.4rem 3.2rem 1.2rem 0;
+  margin: 2.4rem 0 1.6rem 0;
 }
 
 #top input {
-  width: 35%;
-  height: 65%;
+  visibility: hidden;
+
+  width: 80%;
+  height: 3.8rem;
   background-color: #eee;
   border: 1px solid #fff;
   border-radius: 9px;
+  margin: 0 2rem;
+}
 
-  margin-right: 3.2rem;
-
-  text-align: left;
-  font-size: 2.6rem;
-  font-weight: 100;
-  color: #999;
+#top input::placeholder {
+  font-size: 1.6rem;
+  color: #aaa;
 }
 
 .nav-icons {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1.6rem;
 }
 
 .nav-icons a:link,
 .nav-icons a:visited {
-  width: 4rem;
-  height: 4rem;
-  margin-left: 3rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
 }
 
 .nav-icon {
-  font-size: 4rem;
+  font-size: 2.6rem;
   color: #333;
+  padding-top: 0.2rem;
 }
 
 .nav-profile-pic {
-  width: 4rem;
-  height: 4rem;
-  border: 2px solid #333;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #333;
   border-radius: 50%;
 
   padding: 1px;
@@ -101,25 +111,22 @@ main {
 /****************************************/
 
 #profile {
-  display: grid;
-  grid-template-columns: 16rem 1fr;
-  margin-bottom: 2.4rem;
+  display: flex;
+  padding: 1.2rem;
+  gap: 2rem;
 }
 
 #profile-pic {
-  width: 12rem;
-  height: 12rem;
-  border: 1px solid #f7f7f7;
+  width: 8.6rem;
+  height: 8.6rem;
+  border: 1px solid #eee;
   border-radius: 50%;
-
-  margin: 1.6rem auto 2.4rem auto;
 }
 
 #profile-info {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
-  margin: 0 2.4rem 0 2.4rem;
 }
 
 #id {
@@ -127,36 +134,39 @@ main {
   align-items: center;
 
   font-family: "Inter", sans-serif;
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: 300;
   line-height: 1;
   color: #262626;
-  padding-top: 1.8rem;
 }
 
 .verified-symbol {
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: 1.8rem;
-  margin-right: 0.6rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.6rem 1rem 0.2rem;
 }
 
 .cog-btn {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   stroke: #333;
+  margin-bottom: 1rem;
 }
 
-.profile-btn {
-  height: 55%;
-  width: 40%;
+.btn-profile {
+  height: 3rem;
+  width: 25rem;
 
   color: #262626;
-  font-size: 2.1rem;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
   background-color: #fafafa;
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   border-radius: 5px;
+
+  margin-top: 0.6rem;
 }
 
 /****************************************/
@@ -164,33 +174,32 @@ main {
 /****************************************/
 
 .profile-description {
-  margin-left: 2.4rem;
-  margin-bottom: 3.2rem;
+  padding: 1rem 0 1.6rem 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .profile-name {
   font-family: "Inter", sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   color: #262626;
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
 }
 
 .profile-job {
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: #8c8c8c;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.1rem;
 }
 
 .profile-web a:link,
 .profile-web a:visited {
   text-decoration: none;
-  margin-bottom: 3.2rem;
   color: #00376b;
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -199,25 +208,24 @@ main {
 /****************************************/
 
 #highlight-area {
-  display: grid;
-  grid-template-columns: 9rem 9rem 1fr;
-  column-gap: 1.4rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 1.2rem;
-  margin-bottom: 3.2rem;
+  gap: 0.8rem;
+  margin-left: 0.8rem;
+  margin-bottom: 2.4rem;
 }
 
 .highlight-pic {
-  width: 9rem;
-  height: 9rem;
+  width: 6.2rem;
+  height: 6.2rem;
   padding: 1px;
-  border: 2px solid #bbb;
+  border: 1px solid #ddd;
   border-radius: 50%;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .emoji {
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -229,15 +237,15 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 
-  padding: 2.4rem 0;
+  padding: 1.4rem 0;
 }
 
 .stat {
   text-align: center;
-  font-size: 2.1rem;
+  font-size: 1.4rem;
 }
 
 .stat-number {
@@ -263,21 +271,26 @@ main {
 
 .pic-icon {
   color: #8e8e8e;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
-.pic-icons a:link {
+.pic-icons a:link,
+.pic-icons a:visited {
   text-align: center;
-  margin: 1.4rem 0;
+  margin: 0.8rem 0;
   transition: all 0.25s;
+}
+
+.section-thumbnail {
+  border-top: 1px solid #ddd;
 }
 
 .thumbnail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-  margin-bottom: 5px;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .thumbnail {

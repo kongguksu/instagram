@@ -11,18 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
     <title>@sjsj_2050 · Instagram photos and videos</title>
   </head>
 
   <body>
     <nav id="top">
       <img
+        class="logo-img"
         src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
         alt="Instagram logo"
-        class="logo-img"
       />
-      <input type="search" value="&nbsp; &nbsp; Search" />
+      <input
+        type="search"
+        placeholder="&nbsp; &nbsp; &#x1F50D; &nbsp; Search"
+      />
       <div class="nav-icons">
         <a href="#"
           ><ion-icon class="nav-icon" name="home-outline"></ion-icon
@@ -55,10 +60,10 @@
       <div id="profile">
         <div id="profile-pic">
           <img
+            class="circle-pic"
             src="image/profile.jpeg"
             alt="Profile image"
             width="50px"
-            class="circle-pic"
           />
         </div>
         <div id="profile-info">
@@ -69,8 +74,8 @@
               src="image/verified.png"
               alt="Verified Account Symbol"
             /><svg
-              xmlns="http://www.w3.org/2000/svg"
               class="cog-btn"
+              xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -88,7 +93,7 @@
               />
             </svg>
           </div>
-          <button class="profile-btn">Edit Profile</button>
+          <button class="btn-profile">Edit Profile</button>
         </div>
       </div>
 
@@ -124,7 +129,6 @@
           </div>
           <div class="emoji">🌃</div>
         </div>
-        <div></div>
       </div>
 
       <div id="stat-bar">
