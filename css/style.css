@@ -23,9 +23,6 @@ body {
   line-height: 1;
   color: #555;
   margin: 0 auto;
-}
-
-main {
   background-color: #fafafa;
 }
 
@@ -110,16 +107,24 @@ main {
 /***** PROFILE *****/
 /****************************************/
 
+/* Bigger Profile */
+
+#bigger-profile {
+  display: none;
+}
+
+/* Normal Profile */
+
 #profile {
   display: flex;
-  padding: 1.2rem;
-  gap: 2rem;
+  padding: 1rem;
+  gap: 2.2rem;
 }
 
 #profile-pic {
-  width: 8.6rem;
-  height: 8.6rem;
-  border: 1px solid #eee;
+  width: 8.76rem;
+  height: 8.76rem;
+  border: 1px solid #ddd;
   border-radius: 50%;
 }
 
@@ -127,6 +132,7 @@ main {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
+  margin-top: 0.6rem;
 }
 
 #id {
@@ -164,7 +170,7 @@ main {
   letter-spacing: 0.25px;
   background-color: #fafafa;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 4px;
 
   margin-top: 0.6rem;
 }
@@ -269,6 +275,13 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.pic-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
 .pic-icon {
   color: #8e8e8e;
   width: 2.4rem;
@@ -280,6 +293,16 @@ main {
   text-align: center;
   margin: 0.8rem 0;
   transition: all 0.25s;
+  text-decoration: none;
+  color: #8e8e8e;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+}
+
+.pic-icon-name {
+  display: none;
 }
 
 .section-thumbnail {
@@ -295,4 +318,48 @@ main {
 
 .thumbnail {
   width: 100%;
+}
+
+/****************************************/
+/***** FOOTER *****/
+/****************************************/
+
+main {
+  margin-bottom: 5.4rem;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 6.4rem;
+  color: #888;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 1.5rem 1.2rem 1.5rem;
+}
+
+.btn-footer-nav:link,
+.btn-footer-nav:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #888;
+  margin: 0 0.6rem 1.6rem 0.6rem;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-lang-select {
+  border: none;
+  background-color: #fafafa;
+  color: #888;
 }
