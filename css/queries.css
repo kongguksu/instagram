@@ -161,6 +161,12 @@
     gap: 2.6rem;
     margin-bottom: 2.6rem;
   }
+
+  .thumbnail:hover .thumbnail-text,
+  .thumbnail:active .thumbnail-text {
+    flex-wrap: nowrap;
+    gap: 3.2rem;
+  }
 }
 
 /*************************************/
@@ -171,5 +177,9 @@
   main {
     margin: 0 auto;
     max-width: 99.2rem;
+  }
+
+  .section-thumbnail {
+    margin-bottom: 4.8rem;
   }
 }
